@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <!-- &and; &or; -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="navbars.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>CNBPH - Acasa</title>
+</head>
+<body>
+    <a href="#"><button class="scroll-up"><img src="icons/up-arrow-angle.png"></button></a>
+    <header style="display: none">
+        <div class="header-left"><p>Colegiul Național &bdquo;Bogdan Petriceicu Hasdeu&rdquo; Buzău</p></div>
+        <div class="header-center"><p>Colegiul Național &bdquo;B.P. Hasdeu&rdquo; Buzău</p></div>
+        <div class="header-right">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                <span>&nbsp;&nbsp;+40767530580</span>
+            </div>
+            <div style="margin-left: 30px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                </svg>
+                <span>&nbsp;&nbsp;secretariathasdeu@yahoo.com</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar1">
+        <div class="logo-navbar">
+            <a href="index.html"><img class="img-logo" src="logo.png"></a>
+        </div>
+        <div class="width-full-navbar">
+            <div class="all-items-navbar">
+                <div class="dropdown">
+                    <a class="item-navbar">DESPRE<i class="arrow down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item"><a href="#">MANAGEMENT</a></div>
+                        <div class="dropdown-item"><a href="#">CATEDRA</a></div>
+                        <div class="dropdown-item"><a href="#">ORAR</a></div>
+                        <div class="dropdown-item"><a href="#">RELATII PUBLICE</a></div>
+                        <div class="dropdown-item"><a href="#">TRADITII</a></div>
+                    </div>
+                </div>
+                <a class="item-navbar" href="anunturi.html">ANUNTURI</a>
+                <a class="item-navbar" href="#">ADMITERE</a>
+                <a class="item-navbar" href="contact.html">CONTACT</a>
+            </div>
+            <div class="log-in-div">
+                <button class="log-in-button">LOG IN</button>
+            </div> 
+        </div>
+        <div class="width-full-navbar-1100">
+            <button href="javascript:void(0)" onclick="check()">
+                <div class="icon-hamburger" id="hamburger">
+                    <div id="bar1" class="bar-hamburger"></div>
+                    <div id="bar2" class="bar-hamburger"></div>
+                    <div id="bar3" class="bar-hamburger"></div>
+                </div>
+                <!-- <svg id="hamburger" class="icon-hamburger" x="0px" y="0px" width="40px" height="50px" viewBox="0 0 384 273" style="enable-background:new 0 0 384 273;" xml:space="preserve">
+                    <path class="st0" d="M384,56.1H0V0h384V56.1z M384,107.9H0v56.1h384V107.9z M384,216.9H0V273h384V216.9z"/>
+                </svg> -->
+            </button>
+        </div>
+    </nav>
+        <div id="sideNav" class="sidenav">
+            <div class="sidenav-all-items">
+                <div class="dropdown-side">
+                    <a class="item-sidenav border-bottom" onclick="sideDropdownToggle()">DESPRE<i id="arrow" class="arrow down"></i></a>
+                    <div id="dropdown-side" class="dropdown-content-side">
+                        <div class="dropdown-item-side"><a href="#">MANAGEMENT</a></div>
+                        <div class="dropdown-item-side"><a href="#">CATEDRA</a></div>
+                        <div class="dropdown-item-side"><a href="#">ORAR</a></div>
+                        <div class="dropdown-item-side"><a href="#">RELATII PUBLICE</a></div>
+                        <div class="dropdown-item-side"><a href="#">TRADITII</a></div>
+                    </div>
+                </div>
+                <a class="item-sidenav border-bottom" href="anunturi.html">ANUNTURI</a>
+                <a class="item-sidenav border-bottom" href="#">ADMITERE</a>
+                <a class="item-sidenav border-bottom" href="contact.html">CONTACT</a>
+                <button id="bttn-side" class="log-in-sidenav">LOG IN</button>
+            </div>
+        </div>
+    <div class="main">
+        <div class="titlu-div">
+            <h1>Colegiul Național</h1>
+            <h1>&bdquo;Bogdan Petriceicu Hasdeu&rdquo;</h1>
+            <h1>Buzău</h1>
+            <button class="buton-title">PREZENTAREA LICEULUI</button>
+        </div>
+    </div>
+    <div class="body2">
+        <div id="wrapper" class="wrapper">
+            <div class="oferta-educationala">
+                <h1>Ofertă Educațională</h1>
+                <div style="display:flex;">
+                    <div class="toate-ofertele-ed">
+                        <div class="oferta">
+                            <div class="oferta-text">
+                                <p class="text-titlu">LICEU</p>
+                                <p class="text-mic">
+                                    156 de locuri valabile pentru profilul real
+                                </p>
+                            </div>
+                            <div style="justify-content: flex-end;display: flex;">
+                                <button>VEZI MAI MULT &#10230;</button>
+                            </div>
+                        </div>
+                        <div class="oferta">
+                            <div class="oferta-text">
+                                <p class="text-titlu">LICEU</p>
+                                <p class="text-mic">
+                                    104 de locuri valabile pentru profilul uman
+                                </p>
+                            </div>
+                            <div style="justify-content: flex-end;display: flex;">
+                                <button>VEZI MAI MULT &#10230;</button>
+                            </div>
+                        </div>
+                        <div class="oferta">
+                            <div class="oferta-text">
+                                <p class="text-titlu">GIMNAZIU</p>
+                                <p class="text-mic">
+                                    25 de locuri valabile pentru gimnaziu
+                                </p>
+                            </div>
+                            <div style="justify-content: flex-end; display: flex;">
+                                <button>VEZI MAI MULT &#10230;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="despre">
+                <h1 class="title-despre1" style="margin-bottom: 15px;">Despre Colegiu</h1>
+                <div class="despre-tot">
+                    <div class="despre-text">
+                        <h1 class="title-despre2" style="margin-bottom: 15px;">Despre Colegiu</h1>
+                        <p>Școala noastră este o instituție de stat, în Buzău, oraș din Sud-Estul României, la aproximativ 100 km de capitala sa, București. Suntem un liceu/colegiu teoretic cu elevi între clasele a 9-a și a 12-a, dar avem și un număr mic de clase de gimnaziu. Avem un număr de aproximativ 1500 de elevi cu vârste cuprinse între 11 și 19 ani și în jur de 80 de profesori.
+                        <br><br>Departamentele de studii din liceul nostru sunt: Matematică-Informatică, Științe, Studii umaniste (Limbi străine și studii de literatură română) și Studii sociale. Avem și cursuri bilingve. Limbile străine studiate în școală sunt: engleză, franceză și germană.</p>
+                        <button>MAI MULT &#10230;</button>
+                    </div>
+                    <div class="despre-text2">
+                        <h1 class="title-despre2" style="margin-bottom: 15px;">Despre Colegiu</h1>
+                        <p>Școala noastră este o instituție de stat, în Buzău, oraș din Sud-Estul României, la aproximativ 100 km de capitala sa, București.<br><br> Suntem un liceu/colegiu teoretic cu elevi între clasele a 9-a și a 12-a, dar avem și un număr mic de clase de gimnaziu. Avem un număr de aproximativ 1500 de elevi cu vârste cuprinse între 11 și 19 ani și în jur de 80 de profesori.
+                        </p>
+                        <button>MAI MULT &#10230;</button>
+                    </div>
+                    <div class="despre-pic">
+                    </div>
+                </div>
+            </div>
+            <div class="noutati">
+                <h1>Noutăți</h1>
+                <div class="noutati-tot">
+                    <div onclick="parent.location='anuntTemplate.html'" class="noutati-item">
+                        <div class="noutati-date">
+                                <div class="date">
+                                    <p class="date-day">25</p>
+                                    <p class="date-month">NOV</p>
+                                    <p class="date-year">2022</p>
+                                </div>
+                            <h2 class="arrow-date">&#10230;</h2>
+                        </div>
+                        <div class="noutati-text">
+                            <h2>Colegiul Mihai Eminescu a fost inchis! Raspunsul e aici</h2>
+                            <p class="text-anunt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi eros, laoreet in sapien a, malesuada condimentum tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>  
+                    </div>
+                    <div onclick="parent.location='anuntTemplate.html'" class="noutati-item">
+                        <div class="noutati-date">
+                            <div class="date">
+                                <p class="date-day">15</p>
+                                <p class="date-month">MAY</p>
+                                <p class="date-year">2022</p>
+                            </div>
+                        <h2 class="arrow-date">&#10230;</h2>
+                    </div>
+                        <div class="noutati-text">
+                            <h2>Glodeanu Sarat centrul Buzaului </h2>
+                            <p class="text-anunt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi eros, laoreet in sapien a, malesuada condimentum tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>  
+                    </div>
+                    <div onclick="parent.location='anuntTemplate.html'" class="noutati-item">
+                        <div class="noutati-date">
+                            <div class="date">
+                                <p class="date-day">09</p>
+                                <p class="date-month">MAR</p>
+                                <p class="date-year">2022</p>
+                            </div>
+                        <h2 class="arrow-date">&#10230;</h2>
+                    </div>
+                        <div class="noutati-text">
+                            <h2>Acest anunt este important</h2>
+                            <p class="text-anunt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi eros, laoreet in sapien a, malesuada condimentum tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="noutati-tot2">
+                    <div onclick="parent.location='anuntTemplate.html'" class="noutati-item2">
+                        <div class="noutati-date2">
+                            <div class="date2"><p class="date-day">25</p>&nbsp;<p class="date-month">NOV</p>&nbsp;<p class="date-year">2022</p></div>
+                            <h2 class="arrow-date2">&#10230;</h2>
+                        </div>
+                        <div class="noutati-text2">
+                            <h2>Colegiul Mihai Eminescu a fost inchis! Raspunsul e aici</h2>
+                            <p class="text-anunt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi eros, laoreet in sapien a, malesuada condimentum tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </div>
+                    <div onclick="parent.location='anuntTemplate.html'" class="noutati-item2">
+                        <div class="noutati-date2">
+                            <div class="date2"><p class="date-day">15</p>&nbsp;<p class="date-month">MAY</p>&nbsp;<p class="date-year">2022</p></div>
+                            <h2 class="arrow-date2">&#10230;</h2>
+                        </div>
+                        <div class="noutati-text2">
+                            <h2>Glodeanu Sarat centrul Buzaului</h2>
+                            <p class="text-anunt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi eros, laoreet in sapien a, malesuada condimentum tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </div>
+                    <div onclick="parent.location='anuntTemplate.html'" class="noutati-item2">
+                        <div class="noutati-date2">
+                            <div class="date2"><p class="date-day">09</p>&nbsp;<p class="date-month">MAR</p>&nbsp;<p class="date-year">2022</p></div>
+                            <h2 class="arrow-date2">&#10230;</h2>
+                        </div>
+                        <div class="noutati-text2">
+                            <h2>Acest anunt este important</h2>
+                            <p class="text-anunt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi eros, laoreet in sapien a, malesuada condimentum tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </div>
+                </div>
+                <button  class="more">MAI MULT &#10230;</button>
+            </div>
+            <div class="pagini-folositoare">
+                <h1>Linkuri folositoare</h1>
+                <div class="toate-linkurile">
+                    <div class="link-container">
+                        <div class="link">
+                            <h2>MEDIA<i class="arrow-pag down-pag"></i></h2>
+                        </div>
+                        <div class="link-dropdown">
+                            <ul>
+                                <li><a target="_blank" href="https://stackoverflow.com">Messi nu a dat niciun gol, l-a dezamagit pe Maradona</a></li>
+                                <li><a target="_blank" href="https://stackoverflow.com">Glodeanu Sarat - glodeanu sarat</a></li>
+                                <li><a target="_blank" href="https://stackoverflow.com">Alex este super</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link-container">
+                        <div class="link">
+                            <h2>CLUBURI<i class="arrow-pag down-pag"></i></h2>
+                        </div>
+                        <div class="link-dropdown">
+                            <ul>
+                                <li><a target="_blank" href="https://stackoverflow.com">Messi nu a dat niciun gol, l-a dezamagit pe Maradona</a></li>
+                                <li><a target="_blank" href="https://stackoverflow.com">Glodeanu Sarat - glodeanu sarat</a></li>
+                                <li><a target="_blank" href="https://stackoverflow.com">Alex este super</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link-container">
+                        <div class="link">
+                            <h2>ADMITERE<i class="arrow-pag down-pag"></i></h2>
+                        </div>
+                        <div class="link-dropdown">
+                            <ul>
+                                <li><a target="_blank" href="https://stackoverflow.com">Messi nu a dat niciun gol, l-a dezamagit pe Maradona</a></li>
+                                <li><a target="_blank" href="https://stackoverflow.com">Glodeanu Sarat - glodeanu sarat</a></li>
+                                <li><a target="_blank" href="https://stackoverflow.com">Alex este super</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bot">
+            <div class="left">
+                <div class="top">
+                    <img src="logo.png">
+                    <h2>COLEGIUL NATIONAL BP HASDEU</h2>
+                </div>
+                <p>SOCIAL MEDIA</p>
+                <div class="icons-social">
+                    <a target="_blank" href="https://www.facebook.com/bphasdeu.ro" name="facebook">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    <label for="facebook">Colegiul National B.P. Hasdeu Buzau</label>
+                    </a>
+                    
+                    <a target="_blank" href="https://www.instagram.com/cn_bphasdeu/" name="instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                    <label for="instagram">cn_bphasdeu</label>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="right">
+                <p>Adresa</p>
+                <span>Bd. Garii, nr. 1<br>Cod postal 120218<br>Buzau, Romania</span>
+            </div>
+        </div>
+    </footer>
+    <script src="nav.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    height: 100%;
+    background-color: #FFF;
+    color: var(--midnightBlue);
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0px;
+}
+h2{
+    margin: 0px;
+}
+:root{
+    --fontSansSerif: 'Inter';
+    --fontSerif: 'DM Serif Display';
+    --heightDropdown: 250px;
+    --bluePigment: #333895;
+    --midnightBlue: #1B1164;
+    --aliceBlue: #E4EBF8;
+    --lightSteelBlue: #B0C5E3;
+    --darkSteelBlue: #86ADE3;
+}
+*{
+	box-sizing: border-box;
+    font-family: var(--fontSansSerif);
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.inapoi{
+    color: rgb(193, 195, 214);
+}
+.inapoi:hover{
+    text-decoration: underline;
+    color: var(--midnightBlue);
+}
+.scroll-up{
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 5;
+    border:none;
+    background-color: var(--midnightBlue);
+    padding: 10px 10px;
+    border-radius: 50%;
+    transition: all 0.15s;
+}
+.scroll-up:hover{
+    background-color: #241881;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+    padding: 12px 12px;
+    right: 23px;
+    bottom: 28px;
+}
+.scroll-up:active{
+    padding: 8px 8px;
+    right: 27px;
+    bottom: 32px;
+}
+.scroll-up img{
+    height: 30px;
+    filter: invert();
+}
+.body2{
+    padding: 150px 15%;
+}
+.wrapper{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0px 7px 2px rgba(0,0,0,0.1);
+    min-height: 500px;
+    padding: 45px;
+}
+#title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#date{
+    color: rgb(193, 195, 214);
+    margin-bottom: 30px;
+}
+#categorie{
+    font-size: 16px;
+    color: rgb(193, 195, 214);
+    margin-bottom: 5px;
+}
+button svg{
+    vertical-align: middle;
+}
+#bttnLeft:hover, #bttnRight:hover{
+    background-color: var(--midnightBlue);
+    cursor: pointer;
+}
+.bottom-section{
+    display: flex;
+    gap: 5px;
+    border-top: solid;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-width: 2px;
+    border-color: rgb(193, 195, 214);
+    justify-content: flex-end;
+}
+#bttnLeft, #bttnRight{
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: rgb(193, 195, 214);
+    transition: all 0.15s;
+}
+.downloads{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+.down-item{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+}
+@media all and (max-width: 1120px){
+    .body2{
+        padding: 120px 5%;
+    }
+}

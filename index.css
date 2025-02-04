@@ -1,0 +1,610 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    background-color: #FFF;
+    height: 100%;
+}
+.body2{
+    margin-left: 20%;
+    margin-right: 20%;
+    z-index: 3;
+    position: relative;
+    top: -100px;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0px;
+}
+svg{
+    vertical-align: middle;
+}
+:root{
+    --fontSansSerif: 'Inter';
+    --fontSerif: 'DM Serif Display';
+    --heightDropdown: 250px;
+    --bluePigment: #333895;
+    --midnightBlue: #1B1164;
+    --aliceBlue: #E4EBF8;
+    --lightSteelBlue: #B0C5E3;
+    --darkSteelBlue: #86ADE3;
+}
+*{
+	box-sizing: border-box;
+    font-family: var(--fontSansSerif);
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.scroll-up{
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 4;
+    border:none;
+    background-color: var(--midnightBlue);
+    padding: 10px 10px;
+    border-radius: 50%;
+    transition: all 0.15s;
+}
+.scroll-up:hover{
+    background-color: #241881;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+    padding: 12px 12px;
+    right: 23px;
+    bottom: 28px;
+}
+.scroll-up:active{
+    padding: 8px 8px;
+    right: 27px;
+    bottom: 32px;
+}
+.scroll-up img{
+    height: 30px;
+    filter: invert();
+}
+.main h1{
+    user-select: none;
+    font-family: var(--fontSerif), serif;
+    color: white;
+    font-size: 55px;
+}
+.titlu-div{
+    height: inherit;
+    padding-top: 100px;
+    padding-left: 10%;
+}
+.buton-title{
+    padding: 15px 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    color: var(--midnightBlue);
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    transition: all 0.15s;
+}
+.buton-title:hover{
+    background-color: rgba(27, 17, 100, 1);
+    color: white;
+    cursor: pointer;
+}
+.main{
+    margin-top: 100px;
+    width: 100%;
+    background-image: url('images/hasdeu2-gradient-left.png');
+    background-size: cover;
+    background-position: 0 30%;
+    height: 700px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: var(--fontSansSerif);
+    z-index: inherit;
+    background-color: white;
+    color: #1B1164;
+    box-shadow: 0 0px 7px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 100%;
+    padding: 40px 50px;
+}
+.wrapper h1{
+    font-family: var(--fontSansSerif);
+    font-weight: 800;
+    margin-bottom: 50px;
+    font-size: 28px;
+    
+}
+.oferta{
+    user-select: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    border: none;
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+    border-width: 4px;
+    color: var(--midnightBlue);
+    transition: all 0.15s;
+}
+.oferta:nth-child(2){
+    margin: 0px 50px;
+}
+.oferta-text{
+    padding: 20px 20px 10px 20px;
+}
+.oferta div button{
+    background-color: var(--midnightBlue);
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+.oferta:hover p{
+    color: white;
+}
+.oferta:hover{
+    background-color: var(--midnightBlue);
+    cursor: pointer;
+}
+.oferta:hover button{
+    background-color: white;
+    color: var(--midnightBlue);
+}
+.oferta button:hover{
+    cursor: pointer;
+}
+.toate-ofertele-ed{
+    width: 100%;
+    display: flex;
+}
+.text-titlu{
+    font-weight: 700;
+    font-size: 20px;
+}
+.text-mic{
+    padding: 20px 20px;
+    font-weight: 500;
+}
+.title-despre1{
+    display: none;
+}
+.despre-tot{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.despre-text{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.despre-text2{
+    margin-right: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.despre-pic{
+    background-image: url(images/hasdeu3.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.15);
+}
+.despre-text, .despre-pic{
+    width: 50%;
+}
+.despre-text button, .despre-text2 button{
+    white-space: nowrap;
+    margin-top: 50px;
+    width: 150px;
+    padding: 15px 20px;
+    border: none;
+    background-color: var(--midnightBlue);
+    color: white;
+    transition: all 0.15s;
+}
+.despre-text button:hover{
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+    background-color: white;
+    color: var(--midnightBlue);
+    cursor: pointer;
+}
+.despre-text2 button:hover{
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+    background-color: white;
+    color: var(--midnightBlue);
+    cursor: pointer;
+}
+.more{
+    white-space: nowrap;
+    margin-top: 50px;
+    width: 150px;
+    padding: 15px 20px;
+    border: none;
+    background-color: var(--midnightBlue);
+    color: white;
+    transition: all 0.15s;
+}
+.more:hover{
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+    background-color: white;
+    color: var(--midnightBlue);
+    cursor: pointer;
+}
+.noutati h1{
+    margin-bottom: 50px;
+}
+.noutati-tot{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+.noutati-item{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+}
+.noutati-date{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    background-color: var(--midnightBlue);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+}
+.noutati-date p{
+    font-weight: 400;
+}
+.arrow-date{
+    position: absolute;
+    font-size: 35px;
+    opacity: 0%;
+}
+.noutati-text h2{
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.noutati-text{
+    width: calc(100% - 100px);
+    padding: 20px 10px 20px 20px;
+    margin-right: 10px;
+}
+.noutati-text p, .noutati-text h2{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.noutati-item:hover{
+    cursor: pointer;
+}
+.noutati-item:hover .noutati-date .date{
+    opacity: 0%;
+}
+.noutati-item:hover .noutati-date .arrow-date{
+    opacity: 100%;
+}
+.date-day{
+    font-size: 28px
+}
+.date-year{
+    font-size: 14px;
+}
+.noutati-tot2{
+    display: none;
+}
+.pagini-folositoare, .toate-linkurile{
+    width: 100%;
+}
+.toate-linkurile{
+    font-weight: 500;
+    display:flex;
+    gap: 30px;
+}
+.link{
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 20px 10px;
+    background-color: var(--midnightBlue);
+    color: white;
+    transition: all 0.15s;
+}
+/*.link:hover{
+    cursor: pointer;
+}*/
+.link-container{
+    width: 33%;
+}
+.link h2{
+    user-select: none;
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+.arrow-pag{
+    display: none;
+    vertical-align: middle;
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 9px;
+    margin-left: 10px;
+  }
+.down-pag{
+    display: none;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.15s;
+}
+.up-pag{
+    margin-bottom: 4px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.link-dropdown{
+    background-color: white;
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+    padding: 0px 10px;
+    height: max-content;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.link-dropdown ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.link-dropdown ul li{
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.link-dropdown ul li a{
+    color: var(--midnightBlue);
+}
+.link-dropdown ul li a:hover{
+    text-decoration: underline;
+}
+@media all and (max-width: 1800px){
+    .body2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media all and (max-width: 1120px){
+    .more{
+        margin-top: 30px;
+    }
+    .despre-text2{
+        display: none;
+    }
+    .title-despre1{
+        display: block;
+    }
+    .title-despre2{
+        display: none;
+    }
+    .toate-ofertele-ed{
+        flex-direction: column;
+    }
+    .oferta{
+        width: 100%;
+    }
+    .oferta:nth-child(2){
+        margin: 50px 0px;
+    }
+    .despre-tot{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+    .despre-text, .despre-pic{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .despre-pic{
+        height: 300px;
+        background-image: url(images/hasdeu3.jpg);
+        background-size: cover;
+        background-position: 50% 30%;
+        margin-bottom: 40px;
+    }
+    nav{
+        padding: 0px 3% 0px 4%;
+    }
+    .sidenav{
+        display: block;
+    }
+    .body2{
+        top: -120px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .width-full-navbar{
+        display: none;
+    }
+    .width-full-navbar-1100{
+        display: flex;
+        width: 100%;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }   
+
+    .width-full-navbar-1100 button:hover{
+        cursor: pointer;
+    }
+    .width-full-navbar-1100 button{
+        margin-top: 25px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+    }
+    .header-right{
+        display: none;
+    }
+    .header-left{
+        width: 100%;
+        align-content: center;
+        justify-content: center;;
+    }
+    .toate-linkurile{
+        flex-direction: column;
+    }
+    .link-container{
+        width: 100%;
+        transition: all 0.2s;
+    }
+    .link{
+        width: 100%;
+        transition: all 0.2s;
+    }
+}
+@media all and (max-width: 790px){
+    .buton-title{
+        font-size: 15px;
+    }
+    .despre-pic{
+        height: 230px;
+        background-image: url(images/hasdeu3.jpg);
+        background-size: cover;
+        background-position: 50% 30%;
+        margin-bottom: 30px;
+    }
+    .wrapper{
+        padding: 40px 30px;
+    }
+    .body2{
+        top: -150px;
+    }
+    .titlu-div h1{
+        font-size: 40px;
+    }
+    .noutati-tot{
+        display: none;
+    }
+    .noutati-tot2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+    }
+    .noutati-item2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .noutati-text2{
+        width: 100%;
+        min-height: 100px;
+        background-color: white;
+        box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+        padding: 20px 10px 20px 20px;
+        margin-right: 10px;
+    }
+    .noutati-date2 .date-day, .noutati-date2 .date-month, .noutati-date2 .date-year{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .noutati-date2{
+        box-shadow: 0 3px 7px 2px rgba(0,0,0,0.1);
+        display: flex;
+        width: 150px;
+        padding: 10px 10px;
+        background-color: var(--midnightBlue);
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .noutati-text2 h2{
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .noutati-text2 p{
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .noutati-text2 h2{
+        display:block;
+        white-space: wrap;
+    }
+    .noutati-item2:hover{
+        cursor: pointer;
+    }
+    .date2{
+        display: flex;
+        flex-direction: row;
+        transition: all 0.15s;
+    }
+    .noutati-item2:hover .date2{
+        opacity: 0%;
+    }
+    .arrow-date2{
+        vertical-align: top;
+        position: absolute;
+        font-size: 25px;
+        margin: 0;
+        opacity: 0%;
+    }
+    .noutati-item2:hover .noutati-date2 .arrow-date2{
+        opacity: 100%;
+    }
+    
+}
+@media all and (max-width: 630px){
+    .despre-text2{
+        margin-right: 0px;
+        display: block;
+    }
+    .despre-text{
+        display: none;
+    }
+    .titlu-div h1{
+        font-size: 35px;
+        }
+}
+
+@media all and (max-width: 550px){
+    .despre-pic{
+        height: 200px;
+        background-image: url(images/hasdeu3.jpg);
+        background-size: cover;
+        background-position: 50% 30%;
+        margin-bottom: 30px;
+    }
+    .body2{
+        top: -170px;
+    }
+    .titlu-div h1{
+        font-size: 30px;
+    }
+}
